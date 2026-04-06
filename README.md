@@ -3,6 +3,7 @@
 **Live Demo:** 
 👉 https://rag-chatbot-otcfoy7nvekby3tmmxycba.streamlit.app/
 
+🎥 Demo [demo.gif]
 
 A conversational AI chatbot that lets you upload PDFs and ask questions about them. Built with Retrieval-Augmented Generation (RAG), it retrieves the most relevant chunks from your documents, reranks them for accuracy, and generates structured answers using LLaMA 3.3 70B via Groq.
 
