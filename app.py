@@ -6,7 +6,7 @@ from datetime import datetime
 
 
 st.set_page_config(
-    page_title="Chat with your PDF",
+    page_title="RAG PDF Chatbot",
     page_icon="📄",
     layout="centered"
 )
@@ -109,7 +109,7 @@ def build_export_text(messages: list, indexed_files: list) -> str:
 
 
 # ── Page Header ──────────────────────────────────────────
-st.title("📄 Chat with your PDF")
+st.title("📄 RAG PDF Chatbot")
 st.caption("Upload PDFs and ask anything — powered by RAG + Groq")
 
 mode_toggle = st.toggle("Smart Mode", value=True)
