@@ -6,5 +6,7 @@ langchain-groq
 langchain-text-splitters
 chromadb
 sentence-transformers
+torch
+torchvision
 pypdf
 python-dotenv
