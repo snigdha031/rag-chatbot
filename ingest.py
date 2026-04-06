@@ -21,12 +21,19 @@ def ingest_pdf(pdf_path: str):
     embeddings = HuggingFaceEmbeddings(
         model_name="all-MiniLM-L6-v2"
     )
+    
+    from chromadb.config import Settings
 
     vectordb = Chroma.from_documents(
         documents=chunks,
         embedding=embeddings,
-        persist_directory="./chroma_db"
+        persist_directory="./chroma_db",
+        client_settings=Settings(
+            anonymized_telemetry=False,
+            is_persistent=True
+        )
     )
+    
     print(f"Indexed {len(chunks)} chunks into ChromaDB")
     return vectordb
 
