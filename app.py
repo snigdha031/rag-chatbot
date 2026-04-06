@@ -181,9 +181,7 @@ with st.sidebar:
 
     st.divider()
 
-    if st.button("Clear all & start over", use_container_width=True):
-        if os.path.exists("./chroma_db"):
-            shutil.rmtree("./chroma_db")
+    if st.button("Clear chat & reset", use_container_width=True):
         st.session_state.clear()
         st.rerun()
 
